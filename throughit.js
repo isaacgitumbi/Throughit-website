@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.setItem('name', name);
     localStorage.setItem('title', title);
     localStorage.setItem('time', time);
-    localStorage.setItem('challenges', challenges);
+    localStorage.setItem('distractions', distractions);
     localStorage.setItem('deadline', deadline);
 
     
