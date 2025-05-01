@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home - Throughit</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav class="navigation">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="cool.html">Cool</a>
+    <a href="highlights.html">Highlights</a>
+  </nav>
+
+  <main class="home">
+    <h1>Hi, welcome to Throughit</h1>
+    <p>Throughit is a platform designed to help students struggling with time management manage their assignments and
+      deadlines effectively.</p>
+  </main>
+
+  <header id="home">
+    <p class="header">Fill in the form below for your clarity pledge.<br>The clarity pledge helps in keeping you on toes
+      as you have made a promise to yourself.</p>
+  </header>
+
+  <section>
+    <form id="throughitform">
+      <input type="text" id="name" name="name" placeholder="Student's name" required>
+      <input type="text" id="title" name="title" placeholder="Title of the Assignment" required>
+      <input type="text" id="time" name="timeperiod" placeholder="Time period" required>
+      <input type="text" id="distractions" name="distractions" placeholder="Distractions" required>
+      <input type="text" id="list" name="list" placeholder="Your deadline" required>
+      <button id="submit">Submit</button>
+    </form>
+  </section>
+
+  <div class="timer-container">
+    <h1 id="display">00:00:00</h1>
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+
+  <!-- Result Div for the Clarity Pledge -->
+  <div id="resultDiv">
+    <h2>Clarity Pledge:</h2>
+    <p><strong>Student Name:</strong> <span id="result-name"></span></p>
+    <p><strong>Assignment Title:</strong> <span id="result-title"></span></p>
+    <p><strong>Time Period:</strong> <span id="result-time"></span></p>
+    <p><strong>Distractions:</strong> <span id="result-distractions"></span></p>
+    <p><strong>Deadline:</strong> <span id="result-deadline"></span></p>
+  </div>
+
+  <footer class="footer">
+    <div>
+      &copy;Throughit 2025
+    </div>
+  </footer>
+
+  <script src="throughit.js"></script>
+</body>
+
+</html>
